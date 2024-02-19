@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddWorkoutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_arrow_back_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/img_back_arrow"
+                android:text="Add a Workout"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_back_arrow"
+                app:layout_constraintStart_toEndOf="@+id/img_back_arrow"
+                app:layout_constraintTop_toTopOf="@+id/img_back_arrow" />
+
+            <ImageView
+                android:id="@+id/img_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_check_24"
+                app:tint="@color/white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:backgroundTint="#DDDDDD"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@null"
+                android:ems="10"
+                android:textStyle="bold"
+                android:textColor="@color/WorkoutColor5"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/workout_title"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:textSize="26sp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="@color/WorkoutColor5"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/workout_set"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/WorkoutColor5"
+                android:fontFamily="@font/poppins"
+                android:text="Example Exercise 2 x 5"
+                android:inputType="textMultiLine"
+                android:paddingStart="8dp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/addNewLine"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="4dp"
+                android:background="@drawable/baseline_add_circle_24"
+                app:tint="@android:color/holo_green_light" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_workout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:ems="10"
+                android:visibility="gone"
+                android:gravity="top"
+                android:textColor="@color/WorkoutColor5"
+                android:hint="@string/type_the_workout"
+                android:paddingStart="8dp"
+                android:inputType="textMultiLine"
+                android:lineSpacingMultiplier="1.8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/et_title"
+                app:layout_constraintStart_toStartOf="@+id/et_title"
+                app:layout_constraintTop_toBottomOf="@+id/et_title"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

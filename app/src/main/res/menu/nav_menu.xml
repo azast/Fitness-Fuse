@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item1"
+        android:title="@string/add_new_workout"
+        style="@style/AppTheme.MenuText" />
+    <item
+        android:id="@+id/menu_item2"
+        android:title="@string/completed_workouts_cap"
+        style="@style/AppTheme.MenuText" />'
+
+    <item
+        android:id="@+id/menu_item3"
+        android:title="@string/add_exercise_record"
+        style="@style/AppTheme.MenuText" />
+
+</menu>

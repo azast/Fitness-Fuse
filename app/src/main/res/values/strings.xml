@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fitness-Fuse</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    <string name="please_enter_some_data">Please enter some data</string>
+    <string name="search_workout">Search for a workout</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="workout_title">Workout Title</string>
+    <string name="type_the_workout">Type the workout Description</string>
+    <string name="completed_workouts">Completed Workouts</string>
+    <string name="add_new_workout">ADD A NEW WORKOUT</string>
+    <string name="completed_workouts_cap">COMPLETED WORKOUTS</string>
+    <string name="workout_set">Workout Sets</string>
+    <string name="workout_diet">Workout Diet</string>
+    <string name="add_exercise_record">ADD PERSONAL RECORDS</string>
+    <string name="add_record">Add Personal Records</string>
+    <string name="total_number_of_record">Total Number of Record</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="fitness_fus">Fitness-Fuse</string>
+    <string name="exercises">Exercise</string>
+    <string name="add_deadlift">Add Deadlift</string>
+    <string name="goal">Set a Goal</string>
+    <string name="squat">Squat</string>
+</resources>

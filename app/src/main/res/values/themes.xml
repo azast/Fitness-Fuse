@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CompSciIA" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:statusBarColor">@android:color/holo_blue_dark</item> <!-- Set the status bar color here -->
+
+    </style>
+
+    <style name="AppTheme.MenuText" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">18sp</item> <!-- Adjust the text size as needed -->
+        <item name="android:textStyle">bold</item> <!-- Set the text style to bold -->
+    </style>
+
+    <style name="Theme.CompSciIA" parent="Base.Theme.CompSciIA" />
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+</resources>
